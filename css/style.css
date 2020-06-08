@@ -166,17 +166,49 @@ header {
   border:none;
 }
 
-input[type="search"] {
-  background-color: transparent;
-  background-image: url(../img/icon-search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
+
+
+.search-icon-form {
   width: 24px;
   height: 24px;
-  outline: none;
-  border:none;
+  margin: 0 0 0 0;
+  position: relative;
+} 
+
+.search-icon-form__label {
+  display: block;
+  width: 100%;
+  height: 100%;
+/*   border: 1px solid green; */
+  background-image:url(../img/icon-search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  
 }
+
+.search-icon-form__input {
+  width: 0;
+  min-height: 0;
+  padding: 5px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 40px;
+  left: -119px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-icon-form__input:focus {
+  width: 150px;
+  min-height: 20px;
+  transition: width 1s ease;
+  border: 2px solid #fff;
+}
+
 
 .cart-icon:hover, 
 input[type="search"]:hover {
@@ -611,11 +643,12 @@ aside h2 {
 .video-content {
   min-height: 705px;
   position: relative;
+  margin-bottom: 0;;
+  background-color: #fbfaf8;
 }
 
 .video-clip {
   width: 100%;
-  height: 100v;
   object-fit: cover;
 }
 
@@ -659,4 +692,100 @@ aside h2 {
 
 /* video-content end */
 
+.mobile-app {
+  background-color: #fbfaf8;
+  margin:0;
+}
 
+.moble-app-wrapper {
+  padding: 70px 8px 0 50px;
+  display: flex;
+}
+
+.img-mobile-app {
+  background-image: url(../img/iPhone_in_hand.png);
+  width: 423px;
+  height: 616px;
+}
+
+.mobile-app-content {
+  padding:115px 0 0 0;
+  width: 670px;
+}
+
+
+.mobile-app-content h2 {
+  font-family: 'Raleway-SemiBold', Arial, sans-serif;
+  font-size: 30px;
+  margin: 0 0 40px;
+}
+
+.mobile-app-content p {
+  line-height: 28px;
+  margin:0 0 45px;
+}
+
+
+.mobile-app-list {
+  margin:0 0 0 50px;
+  list-style: none;
+  padding:0;
+}
+
+.mobile-app-item {
+  background-image: url(../img/moblie-list-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  background-position: 0px 3px;
+  padding-left:50px;
+  line-height: 32px;
+}
+
+.mobile-app-item {
+  position: relative;
+}
+
+.results {
+  background-color: #35261f;
+  color: #fff;
+  padding:70px 0 92px;
+}
+
+.result-blocks {
+  display: flex;
+  width: 970px;
+  margin:0 auto;
+
+}
+.result-item {
+  flex:0 1 20%;
+  text-align: center;
+}
+
+.result-item svg {
+  margin:0 0 30px;
+}
+
+.result-item span {
+  display: block;
+  font-size: 48px;
+  margin: 0 0 21px;
+  font-family: 'Montserrat-ExtraLight' Arial, Helvetica, sans-serif;
+}
+
+.result-item .result-title {
+  position: relative;
+  color:#c7b299;
+  font-size: 14px;
+}
+
+.result-title::after {
+  content:"";
+  width: 30px;
+  border: 2px solid #fff;
+  background-color: fff;
+  position: absolute;
+  bottom:-30px;
+  left:calc(50% - 15px);
+}
+ 
